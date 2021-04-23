@@ -7,6 +7,11 @@
   /* background-color: rgb(31, 34, 39); */
 }
 
-/* body {
-
-} */
+body {
+  background: radial-gradient(
+    at top left,
+    rgb(32, 32, 32) 50%,
+    rgba(43, 9, 107, 1) 100%
+  );
+  background-repeat: no-repeat;
+}

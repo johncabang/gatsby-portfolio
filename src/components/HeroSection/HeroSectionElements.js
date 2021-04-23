@@ -6,13 +6,6 @@ export const HeroContainer = styled.div`
   width: 100%;
   margin-top: -80px;
 
-  background: radial-gradient(
-    at top left,
-    rgb(32, 32, 32) 50%,
-    rgba(43, 9, 107, 1) 100%
-  );
-  background-repeat: no-repeat;
-
   @media screen and (max-width: 960px) {
     justify-content: center;
   }
