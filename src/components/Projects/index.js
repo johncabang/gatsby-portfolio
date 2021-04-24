@@ -1,18 +1,23 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import {
+  Image,
   ProjectsContainer,
   ProjectsWrapper,
   ProjectsTitle,
+  ProjectContainer,
+  ProjectTitle,
+  ProjectStackTitle,
+  ProjectWrapper,
 } from "./ProjectsElements"
 
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query ProjectPage {
       projects: allMarkdownRemark(
-        sort: { fields: frontmatter___date, order: DESC }
+        sort: { fields: frontmatter___date, order: ASC }
       ) {
         nodes {
           frontmatter {
@@ -41,14 +46,16 @@ const Projects = () => {
   return (
     <ProjectsContainer>
       <ProjectsWrapper>
-        <ProjectsTitle>Projects</ProjectsTitle>
-        {projects.map(project => (
-          <div key={project.id}>
-            <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
-            <h3>{project.frontmatter.title}</h3>
-            <p>{project.frontmatter.stack}</p>
-          </div>
-        ))}
+        <ProjectsTitle>FEATURED PROJECTS</ProjectsTitle>
+        <ProjectContainer>
+          {projects.map(project => (
+            <ProjectWrapper key={project.id}>
+              <Image fluid={project.frontmatter.thumb.childImageSharp.fluid} />
+              <ProjectTitle>{project.frontmatter.title}</ProjectTitle>
+              <ProjectStackTitle>{project.frontmatter.stack}</ProjectStackTitle>
+            </ProjectWrapper>
+          ))}
+        </ProjectContainer>
       </ProjectsWrapper>
     </ProjectsContainer>
   )
