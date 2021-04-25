@@ -31,7 +31,7 @@ export const ProjectsTitle = styled.h2`
   font-weight: bold;
   color: #ccd6f6;
   width: 100%;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 `
 
 export const ProjectContainer = styled.div`
@@ -49,7 +49,7 @@ export const ProjectContainer = styled.div`
 export const ProjectWrapper = styled.div`
   display: flex;
   justify-content: center;
-  /* width: 100%; */
+  width: 100%;
   padding-bottom: 5rem;
 
   @media screen and (max-width: 960px) {
@@ -63,6 +63,7 @@ export const ProjectImageWrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   width: 100%;
+  cursor: none;
 
   @media screen and (max-width: 960px) {
     height: 100%;
@@ -77,7 +78,7 @@ export const Image = styled(Img)`
 
   @media screen and (max-width: 968px) {
     margin: 0 2rem;
-    /* width: auto; */
+    width: 300px;
   }
 `
 export const ProjectBodyWrapper = styled.div`
@@ -91,7 +92,7 @@ export const ProjectBodyWrapper = styled.div`
 
   @media screen and (max-width: 960px) {
     margin: 0;
-    padding: 0 0 2rem 0;
+    padding: 2rem 0 2rem 0;
   }
 `
 

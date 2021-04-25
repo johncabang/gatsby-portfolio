@@ -27,6 +27,7 @@ const Projects = () => {
             stack
             title
             githubLink
+            previewLink
             thumb {
               childImageSharp {
                 fluid {
@@ -71,6 +72,9 @@ const Projects = () => {
                 </ProjectStackTitle>
                 <ProjectGithubLink href={project.frontmatter.githubLink}>
                   Github Link
+                </ProjectGithubLink>
+                <ProjectGithubLink href={project.frontmatter.previewLink}>
+                  Live Preview
                 </ProjectGithubLink>
               </ProjectBodyWrapper>
             </ProjectWrapper>

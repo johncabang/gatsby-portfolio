@@ -36,7 +36,6 @@ const Navbar = () => {
       <Nav active={{ scroll }} click={click}>
         <NavbarContainer>
           <NavLogo
-            to="/"
             initial={{ y: -250 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.5 }}
@@ -50,15 +49,12 @@ const Navbar = () => {
             {/* <NavItem>
               <NavLinks to="/about">About</NavLinks>
             </NavItem> */}
-            <NavItem>
-              <NavLinks
-                to="/projects"
-                initial={{ y: -250 }}
-                animate={{ y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                Projects
-              </NavLinks>
+            <NavItem
+              initial={{ y: -250 }}
+              animate={{ y: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              <NavLinks to="/">Projects</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

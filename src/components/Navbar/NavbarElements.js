@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
   max-width: 1000px;
 `
 
-export const NavLogo = styled(motion.Link)`
+export const NavLogo = styled(motion.div)`
   color: #bc027f;
   display: flex;
   font-size: 4rem;
@@ -39,7 +39,7 @@ export const NavLogo = styled(motion.Link)`
   padding-left: 2rem;
 
   &:hover {
-    color: #ff4040;
+    color: #8892b0;
     transition: all 0.5s ease;
   }
 
@@ -88,7 +88,7 @@ export const NavMenu = styled.ul`
   }
 `
 
-export const NavItem = styled.li`
+export const NavItem = styled(motion.li)`
   height: 80px;
 
   @media screen and (max-width: 960px) {
@@ -98,7 +98,7 @@ export const NavItem = styled.li`
   }
 `
 
-export const NavLinks = styled(motion.Link)`
+export const NavLinks = styled(Link)`
   color: #bc027f;
   display: flex;
   align-items: center;
@@ -106,6 +106,7 @@ export const NavLinks = styled(motion.Link)`
   padding: 0 1rem;
   height: 100%;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  cursor: pointer;
 
   @media screen and (max-width: 960px) {
     display: table;
@@ -114,7 +115,7 @@ export const NavLinks = styled(motion.Link)`
     padding: 0;
   }
   &:hover {
-    color: #ff4040;
+    color: #8892b0;
     transition: all 0.3s ease;
   }
 `

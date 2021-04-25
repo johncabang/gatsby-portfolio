@@ -41,12 +41,18 @@ const HeroSection = () => {
               the 10 years I have spent as a team coach in a former role.
             </HeroParagraph>
           </HeroParagraphWrapper>
-          <HeroButtonContainer>
+          <HeroButtonContainer
+            whileHover={{
+              originX: 0,
+              scale: 1.1,
+              transition: { duration: 0.2 },
+            }}
+          >
             <HeroButton
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.2 },
-              }}
+            // whileHover={{
+            //   scale: 1.1,
+            //   transition: { duration: 0.2 },
+            // }}
             >
               Contact me
             </HeroButton>

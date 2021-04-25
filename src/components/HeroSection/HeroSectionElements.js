@@ -79,26 +79,30 @@ export const HeroParagraph = styled.div`
   } */
 `
 
-export const HeroButtonContainer = styled.div`
+export const HeroButtonContainer = styled(motion.div)`
   display: flex;
   margin-top: 2rem;
 `
 
 export const HeroButton = styled(motion.button)`
-  background-color: #047bd3;
-  color: #fff;
-  border: none;
-  border-radius: 0.3rem;
+  background-color: transparent;
+  color: #8892b0;
+  /* border: none; */
+  border-radius: 5rem;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-  outline: none;
+  /* outline: none; */
+  border: 1px solid black;
+  border-color: #8892b0;
+
   padding: 10px 20px;
   text-decoration: none;
   white-space: nowrap;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    filter: brightness(1.2);
+    transition: all 0.3s ease-in-out;
+    color: #bc027f;
+    border-color: #bc027f;
   }
 `
