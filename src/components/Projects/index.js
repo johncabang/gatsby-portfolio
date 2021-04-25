@@ -9,6 +9,9 @@ import {
   ProjectTitle,
   ProjectStackTitle,
   ProjectWrapper,
+  ProjectImageWrapper,
+  ProjectBodyWrapper,
+  ProjectGithubLink,
 } from "./ProjectsElements"
 
 // import Img from "gatsby-image"
@@ -17,12 +20,13 @@ const Projects = () => {
   const data = useStaticQuery(graphql`
     query ProjectPage {
       projects: allMarkdownRemark(
-        sort: { fields: frontmatter___date, order: ASC }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         nodes {
           frontmatter {
             stack
             title
+            githubLink
             thumb {
               childImageSharp {
                 fluid {
@@ -41,18 +45,34 @@ const Projects = () => {
 
   const projects = data.projects.nodes
 
-  console.log(projects)
+  // console.log(projects)
 
   return (
     <ProjectsContainer>
       <ProjectsWrapper>
-        <ProjectsTitle>FEATURED PROJECTS</ProjectsTitle>
+        <ProjectsTitle>FEATURED PROJECTS.</ProjectsTitle>
         <ProjectContainer>
           {projects.map(project => (
             <ProjectWrapper key={project.id}>
-              <Image fluid={project.frontmatter.thumb.childImageSharp.fluid} />
-              <ProjectTitle>{project.frontmatter.title}</ProjectTitle>
-              <ProjectStackTitle>{project.frontmatter.stack}</ProjectStackTitle>
+              <ProjectImageWrapper
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 0.2 },
+                }}
+              >
+                <Image
+                  fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                />
+              </ProjectImageWrapper>
+              <ProjectBodyWrapper>
+                <ProjectTitle>{project.frontmatter.title}</ProjectTitle>
+                <ProjectStackTitle>
+                  Built with: {project.frontmatter.stack}
+                </ProjectStackTitle>
+                <ProjectGithubLink href={project.frontmatter.githubLink}>
+                  Github Link
+                </ProjectGithubLink>
+              </ProjectBodyWrapper>
             </ProjectWrapper>
           ))}
         </ProjectContainer>

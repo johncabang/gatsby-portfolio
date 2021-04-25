@@ -1,13 +1,11 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import Navbar from "./Navbar"
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
       <main>{children}</main>
     </>
   )

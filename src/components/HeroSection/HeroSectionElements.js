@@ -1,10 +1,12 @@
 import styled from "styled-components"
 
+import { motion } from "framer-motion"
+
 export const HeroContainer = styled.div`
   display: flex;
-  height: 100vh;
+  justify-content: center;
+  height: calc(100vh - 80px);
   width: 100%;
-  margin-top: -80px;
 
   @media screen and (max-width: 960px) {
     justify-content: center;
@@ -16,7 +18,7 @@ export const HeroWrapper = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1000px;
   padding: 0 9rem;
 
   @media screen and (max-width: 960px) {
@@ -28,14 +30,13 @@ export const HeroTextWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 `
 
-export const HeroName = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+export const HeroName = styled(motion.div)`
   color: #ccd6f6;
   font-size: 75px;
-  width: 800px;
+  cursor: none;
 
   @media screen and (max-width: 960px) {
     font-size: 40px;
@@ -48,7 +49,7 @@ export const HeroTitle = styled.div`
   display: flex;
   flex-wrap: wrap;
   color: #fff;
-  font-size: 80px;
+  font-size: 75px;
   font-weight: bold;
   width: 800px;
 
@@ -68,7 +69,7 @@ export const HeroParagraphWrapper = styled.div`
 
 export const HeroParagraph = styled.div`
   color: #8892b0;
-  font-size: 16px;
+  font-size: 14px;
   margin: 1rem 0;
   line-height: 1.5rem;
   /* width: 500px;
@@ -83,9 +84,9 @@ export const HeroButtonContainer = styled.div`
   margin-top: 2rem;
 `
 
-export const HeroButton = styled.button`
-  background-color: #64ffda;
-  color: #0a192f;
+export const HeroButton = styled(motion.button)`
+  background-color: #047bd3;
+  color: #fff;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;

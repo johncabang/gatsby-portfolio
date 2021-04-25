@@ -1,17 +1,22 @@
 import styled from "styled-components"
 import Img from "gatsby-image"
 
+import { motion } from "framer-motion"
+
+// import { Link } from "gatsby"
+
 export const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   color: white;
   width: 100%;
 `
+
 export const ProjectsWrapper = styled.div`
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: column;
   width: 100%;
+  max-width: 1000px;
   padding: 0 9rem;
 
   @media screen and (max-width: 968px) {
@@ -20,35 +25,74 @@ export const ProjectsWrapper = styled.div`
     padding: 0 1rem;
   }
 `
+
 export const ProjectsTitle = styled.h2`
   font-size: 32px;
   font-weight: bold;
   color: #ccd6f6;
   width: 100%;
+  padding-bottom: 2rem;
 `
+
 export const ProjectContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin: 80px 20px;
 
   @media screen and (max-width: 968px) {
     justify-content: center;
+    margin: 0;
   }
 `
 
 export const ProjectWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  /* width: 100%; */
+  padding-bottom: 5rem;
+
+  @media screen and (max-width: 960px) {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+`
+
+export const ProjectImageWrapper = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media screen and (max-width: 960px) {
+    height: 100%;
+  }
 `
 
 export const Image = styled(Img)`
   border-radius: 10px;
-  width: 300px;
-  /* height: 200px; */
+  width: 400px;
   padding-top: 2rem;
-  object-fit: cover;
   top: 0;
+
+  @media screen and (max-width: 968px) {
+    margin: 0 2rem;
+    /* width: auto; */
+  }
+`
+export const ProjectBodyWrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0 2rem;
+  padding: 0 1.5rem;
+
+  @media screen and (max-width: 960px) {
+    margin: 0;
+    padding: 0 0 2rem 0;
+  }
 `
 
 export const ProjectTitle = styled.h3`
@@ -62,6 +106,18 @@ export const ProjectStackTitle = styled.p`
   font-size: 12px;
 
   @media screen and (max-width: 968px) {
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
+  }
+`
+
+export const ProjectGithubLink = styled.a`
+  font-size: 12px;
+  color: #5f667b;
+  padding-top: 0.5rem;
+  text-decoration: none;
+
+  &:hover {
+    color: #bc027f;
+    transition: all 0.5s ease;
   }
 `

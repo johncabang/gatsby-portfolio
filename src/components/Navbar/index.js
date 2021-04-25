@@ -35,16 +35,30 @@ const Navbar = () => {
     <IconContext.Provider value={{ color: "#141414" }}>
       <Nav active={{ scroll }} click={click}>
         <NavbarContainer>
-          <NavLogo to="/">J.</NavLogo>
+          <NavLogo
+            to="/"
+            initial={{ y: -250 }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            J.
+          </NavLogo>
           <MobileIcon onClick={handleClick}>
             {click ? <FaTimes color="#ccd6f6" /> : <FaBars color="#ccd6f6" />}
           </MobileIcon>
           <NavMenu onClick={handleClick} click={click}>
+            {/* <NavItem>
+              <NavLinks to="/about">About</NavLinks>
+            </NavItem> */}
             <NavItem>
-              <NavLinks to="/">Home</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="/projects">Projects</NavLinks>
+              <NavLinks
+                to="/projects"
+                initial={{ y: -250 }}
+                animate={{ y: 0 }}
+                transition={{ delay: 0.5 }}
+              >
+                Projects
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

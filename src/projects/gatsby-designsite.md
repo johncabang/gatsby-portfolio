@@ -1,10 +1,11 @@
 ---
-title: DESIGNSITE
+title: DESIGNSITE.
 stack: Gatsby & GraphQL
 slug: gatsby-designsite
-date: 2021-01-01T00:00:00+00:00
+date: 2021-03-10T00:00:00+00:00
 thumb: ../images/thumbs/gatsby-designsite.png
 featuredImg: ../images/featured/gatsby-designsite.png
+githubLink: https://github.com/johncabang/gatsby-designsite
 ---
 
 **Based on the hit TV show Breaking Bad, Heisenberg Ipsum**, A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!

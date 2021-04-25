@@ -17,7 +17,19 @@ const HeroSection = () => {
       <HeroWrapper>
         <HeroTextWrapper>
           <HeroParagraph>Hello, my name is</HeroParagraph>
-          <HeroName>John Cabang.</HeroName>
+          <HeroName
+            initial={{ y: `-100vh` }}
+            animate={{ y: 0 }}
+            transition={{ delay: 0.9, type: "spring", stiffness: 50 }}
+            whileHover={{
+              originX: 0,
+              scale: 1.6,
+              color: "#bc027f",
+              transition: { duration: 0.5 },
+            }}
+          >
+            John Cabang.
+          </HeroName>
           <HeroTitle>Front End Developer.</HeroTitle>
           <HeroParagraphWrapper>
             <HeroParagraph>
@@ -30,7 +42,14 @@ const HeroSection = () => {
             </HeroParagraph>
           </HeroParagraphWrapper>
           <HeroButtonContainer>
-            <HeroButton>Contact me!</HeroButton>
+            <HeroButton
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.2 },
+              }}
+            >
+              Contact me
+            </HeroButton>
           </HeroButtonContainer>
         </HeroTextWrapper>
       </HeroWrapper>
