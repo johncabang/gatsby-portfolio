@@ -6,7 +6,6 @@ import {
   HeroParagraph,
   HeroParagraphWrapper,
   HeroButtonContainer,
-  // HeroButton,
   HeroTextWrapper,
   HeroWrapper,
   LinkedinIcon,
@@ -44,19 +43,13 @@ const HeroSection = () => {
               the 10 years I have spent as a team coach in a former role.
             </HeroParagraph>
           </HeroParagraphWrapper>
-          <HeroButtonContainer
-          // whileHover={{
-          //   originX: 0,
-          //   scale: 1.1,
-          //   transition: { duration: 0.2 },
-          // }}
-          >
-            {/* <HeroButton>Contact me</HeroButton> */}
+          <HeroButtonContainer>
             <LinkedinLink
               href="https://www.linkedin.com/in/john-cabang/"
+              target="_blank"
               whileHover={{
                 originX: 0,
-                scale: 1.1,
+                scale: 1.3,
                 transition: { duration: 0.2 },
               }}
             >
@@ -64,9 +57,10 @@ const HeroSection = () => {
             </LinkedinLink>
             <GithubLink
               href="https://github.com/johncabang"
+              target="_blank"
               whileHover={{
                 originX: 0,
-                scale: 1.1,
+                scale: 1.3,
                 transition: { duration: 0.2 },
               }}
             >

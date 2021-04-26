@@ -1,5 +1,5 @@
 ---
-title: CLOCK.
+title: CLOCK
 stack: ReactJS, Styled-Components, MomentJS, API's - WorldTime, IPstack, Programming Quotes
 slug: react-clock
 date: 2021-04-01T00:00:00+00:00

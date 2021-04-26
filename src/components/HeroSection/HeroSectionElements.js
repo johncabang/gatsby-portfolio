@@ -98,44 +98,27 @@ export const HeroButtonContainer = styled(motion.div)`
   margin-top: 1rem;
 `
 
-// export const HeroButton = styled(motion.button)`
-//   background-color: transparent;
-//   color: #8892b0;
-//   /* border: none; */
-//   border-radius: 5rem;
-//   cursor: pointer;
-//   font-size: 1rem;
-//   font-weight: 700;
-//   /* outline: none; */
-//   border: 1px solid black;
-//   border-color: #8892b0;
-
-//   padding: 10px 20px;
-//   text-decoration: none;
-//   white-space: nowrap;
-
-//   &:hover {
-//     transition: all 0.3s ease-in-out;
-//     color: #bc027f;
-//     border-color: #bc027f;
-//   }
-// `
-
 export const LinkedinLink = styled(motion.a)`
-  padding-right: 10px;
+  padding-right: 15px;
 `
 
 export const GithubLink = styled(motion.a)`
-  padding-right: 10px;
+  padding-right: 15px;
 `
 
 export const LinkedinIcon = styled(GrLinkedin)`
-  color: #0072b1;
+  color: #8892b0;
   font-size: 2rem;
-  /* padding: 0 1rem; */
+
+  &:hover {
+    color: #0e76a8;
+  }
 `
 export const GithubIcon = styled(GrGithub)`
-  color: #fff;
+  color: #8892b0;
   font-size: 2rem;
-  /* padding: 0 1rem; */
+
+  &:hover {
+    color: #fff;
+  }
 `

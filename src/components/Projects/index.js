@@ -70,10 +70,16 @@ const Projects = () => {
                 <ProjectStackTitle>
                   Built with: {project.frontmatter.stack}
                 </ProjectStackTitle>
-                <ProjectGithubLink href={project.frontmatter.githubLink}>
+                <ProjectGithubLink
+                  href={project.frontmatter.githubLink}
+                  target="_blank"
+                >
                   Github Link
                 </ProjectGithubLink>
-                <ProjectGithubLink href={project.frontmatter.previewLink}>
+                <ProjectGithubLink
+                  href={project.frontmatter.previewLink}
+                  target="_blank"
+                >
                   Live Preview
                 </ProjectGithubLink>
               </ProjectBodyWrapper>

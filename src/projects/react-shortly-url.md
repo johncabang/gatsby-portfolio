@@ -1,5 +1,5 @@
 ---
-title: SHORTLY URL.
+title: SHORTLY URL
 stack: ReactJS, Styled-Components, shrtcode API
 slug: react-shortly-url
 date: 2021-03-20T00:00:00+00:00

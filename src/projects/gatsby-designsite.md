@@ -1,5 +1,5 @@
 ---
-title: DESIGNSITE.
+title: DESIGNSITE
 stack: Gatsby & GraphQL
 slug: gatsby-designsite
 date: 2021-03-10T00:00:00+00:00

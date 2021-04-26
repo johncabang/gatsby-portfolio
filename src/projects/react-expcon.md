@@ -1,5 +1,5 @@
 ---
-title: EXP-CON.
+title: EXP-CON
 stack: ReactJS
 slug: react-expcon
 date: 2021-01-21T00:00:00+00:00

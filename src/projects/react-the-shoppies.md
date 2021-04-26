@@ -1,5 +1,5 @@
 ---
-title: THE SHOPPIES.
+title: THE SHOPPIES
 stack: ReactJS, Material UI, Axios, OMDb API
 slug: react-the-shoppies
 date: 2021-03-05T00:00:00+00:00
