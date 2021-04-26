@@ -15,7 +15,7 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
-    background: ${({ click }) => (click ? "#000" : "#000")};
+    background-color: #000;
     height: 40px;
   }
 `
@@ -48,44 +48,12 @@ export const NavLogo = styled(motion.div)`
     font-size: 2rem;
   }
 `
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 960px) {
-    display: block;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 25%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    height: 100%;
-  }
-`
 
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
-
-  @media screen and (max-width: 960px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
-    position: fixed;
-    top: ${({ click }) => (click ? "40px" : "-1000px")};
-    transition: all 0.8s ease;
-
-    background: radial-gradient(
-      at top left,
-      rgb(32, 32, 32) 50%,
-      rgba(43, 9, 107, 1) 100%
-    );
-    background-repeat: no-repeat;
-  }
 `
 
 export const NavItem = styled(motion.li)`
@@ -108,12 +76,6 @@ export const NavLinks = styled(Link)`
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   cursor: pointer;
 
-  @media screen and (max-width: 960px) {
-    display: table;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-  }
   &:hover {
     color: #8892b0;
     transition: all 0.3s ease;

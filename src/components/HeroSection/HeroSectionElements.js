@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 import { motion } from "framer-motion"
 
+import { GrLinkedin, GrGithub } from "react-icons/gr"
+
 export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -9,6 +11,8 @@ export const HeroContainer = styled.div`
   width: 100%;
 
   @media screen and (max-width: 960px) {
+    transition: all 0.3s ease-in-out;
+
     justify-content: center;
   }
 `
@@ -22,6 +26,7 @@ export const HeroWrapper = styled.div`
   padding: 0 9rem;
 
   @media screen and (max-width: 960px) {
+    transition: all 0.8s ease-in-out;
     padding: 0 2rem;
   }
 `
@@ -39,9 +44,19 @@ export const HeroName = styled(motion.div)`
   cursor: none;
 
   @media screen and (max-width: 960px) {
+    transition: all 0.8s ease-in-out;
+
     font-size: 40px;
     width: auto;
     padding-bottom: 1rem;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+
+    background: linear-gradient(to right, #dd5eb3, #9c136e, #bc027f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 `
 
@@ -54,6 +69,8 @@ export const HeroTitle = styled.div`
   width: 800px;
 
   @media screen and (max-width: 960px) {
+    transition: all 0.3s ease-in-out;
+
     font-size: 50px;
     width: auto;
     padding-bottom: 1rem;
@@ -62,7 +79,9 @@ export const HeroTitle = styled.div`
 
 export const HeroParagraphWrapper = styled.div`
   width: 500px;
+
   @media screen and (max-width: 960px) {
+    transition: all 0.3s ease-in-out;
     width: 100%;
   }
 `
@@ -72,37 +91,51 @@ export const HeroParagraph = styled.div`
   font-size: 14px;
   margin: 1rem 0;
   line-height: 1.5rem;
-  /* width: 500px;
-
-  @media screen and (max-width: 960px) {
-    width: 400px;
-  } */
 `
 
 export const HeroButtonContainer = styled(motion.div)`
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
 `
 
-export const HeroButton = styled(motion.button)`
-  background-color: transparent;
-  color: #8892b0;
-  /* border: none; */
-  border-radius: 5rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
-  /* outline: none; */
-  border: 1px solid black;
-  border-color: #8892b0;
+// export const HeroButton = styled(motion.button)`
+//   background-color: transparent;
+//   color: #8892b0;
+//   /* border: none; */
+//   border-radius: 5rem;
+//   cursor: pointer;
+//   font-size: 1rem;
+//   font-weight: 700;
+//   /* outline: none; */
+//   border: 1px solid black;
+//   border-color: #8892b0;
 
-  padding: 10px 20px;
-  text-decoration: none;
-  white-space: nowrap;
+//   padding: 10px 20px;
+//   text-decoration: none;
+//   white-space: nowrap;
 
-  &:hover {
-    transition: all 0.3s ease-in-out;
-    color: #bc027f;
-    border-color: #bc027f;
-  }
+//   &:hover {
+//     transition: all 0.3s ease-in-out;
+//     color: #bc027f;
+//     border-color: #bc027f;
+//   }
+// `
+
+export const LinkedinLink = styled(motion.a)`
+  padding-right: 10px;
+`
+
+export const GithubLink = styled(motion.a)`
+  padding-right: 10px;
+`
+
+export const LinkedinIcon = styled(GrLinkedin)`
+  color: #0072b1;
+  font-size: 2rem;
+  /* padding: 0 1rem; */
+`
+export const GithubIcon = styled(GrGithub)`
+  color: #fff;
+  font-size: 2rem;
+  /* padding: 0 1rem; */
 `

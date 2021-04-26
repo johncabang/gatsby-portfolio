@@ -6,9 +6,13 @@ import {
   HeroParagraph,
   HeroParagraphWrapper,
   HeroButtonContainer,
-  HeroButton,
+  // HeroButton,
   HeroTextWrapper,
   HeroWrapper,
+  LinkedinIcon,
+  GithubIcon,
+  LinkedinLink,
+  GithubLink,
 } from "./HeroSectionElements"
 
 const HeroSection = () => {
@@ -24,11 +28,10 @@ const HeroSection = () => {
             whileHover={{
               originX: 0,
               scale: 1.6,
-              color: "#bc027f",
               transition: { duration: 0.5 },
             }}
           >
-            John Cabang.
+            John Cabang
           </HeroName>
           <HeroTitle>Front End Developer.</HeroTitle>
           <HeroParagraphWrapper>
@@ -42,20 +45,33 @@ const HeroSection = () => {
             </HeroParagraph>
           </HeroParagraphWrapper>
           <HeroButtonContainer
-            whileHover={{
-              originX: 0,
-              scale: 1.1,
-              transition: { duration: 0.2 },
-            }}
+          // whileHover={{
+          //   originX: 0,
+          //   scale: 1.1,
+          //   transition: { duration: 0.2 },
+          // }}
           >
-            <HeroButton
-            // whileHover={{
-            //   scale: 1.1,
-            //   transition: { duration: 0.2 },
-            // }}
+            {/* <HeroButton>Contact me</HeroButton> */}
+            <LinkedinLink
+              href="https://www.linkedin.com/in/john-cabang/"
+              whileHover={{
+                originX: 0,
+                scale: 1.1,
+                transition: { duration: 0.2 },
+              }}
             >
-              Contact me
-            </HeroButton>
+              <LinkedinIcon />
+            </LinkedinLink>
+            <GithubLink
+              href="https://github.com/johncabang"
+              whileHover={{
+                originX: 0,
+                scale: 1.1,
+                transition: { duration: 0.2 },
+              }}
+            >
+              <GithubIcon />
+            </GithubLink>
           </HeroButtonContainer>
         </HeroTextWrapper>
       </HeroWrapper>
