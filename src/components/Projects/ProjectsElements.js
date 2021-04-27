@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import { motion } from "framer-motion"
 
@@ -70,7 +70,7 @@ export const ProjectImageWrapper = styled(motion.div)`
   }
 `
 
-export const Image = styled(Img)`
+export const Image = styled(GatsbyImage)`
   border-radius: 10px;
   width: 400px;
   padding-top: 2rem;

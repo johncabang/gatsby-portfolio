@@ -14,8 +14,6 @@ import {
   ProjectGithubLink,
 } from "./ProjectsElements"
 
-// import Img from "gatsby-image"
-
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query ProjectPage {
@@ -27,12 +25,9 @@ const Projects = () => {
             stack
             title
             githubLink
-            previewLink
             thumb {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -55,6 +50,7 @@ const Projects = () => {
         <ProjectContainer>
           {projects.map(project => (
             <ProjectWrapper key={project.id}>
+              {/* {console.log(project.frontmatter)} */}
               <ProjectImageWrapper
                 whileHover={{
                   scale: 1.1,
@@ -62,7 +58,10 @@ const Projects = () => {
                 }}
               >
                 <Image
-                  fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  image={
+                    project.frontmatter.thumb.childImageSharp.gatsbyImageData
+                  }
+                  alt={project.frontmatter.title}
                 />
               </ProjectImageWrapper>
               <ProjectBodyWrapper>

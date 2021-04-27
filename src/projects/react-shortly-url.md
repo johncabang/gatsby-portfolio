@@ -4,7 +4,6 @@ stack: ReactJS, Styled-Components, shrtcode API
 slug: react-shortly-url
 date: 2021-03-20T00:00:00+00:00
 thumb: ../images/thumbs/react-shortly-url.png
-featuredImg: ../images/featured/react-shortly-url.png
 githubLink: https://github.com/johncabang/react-shortly-url
 ---
 

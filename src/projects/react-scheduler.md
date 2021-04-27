@@ -4,7 +4,6 @@ stack: ReactJS
 slug: react-scheduler
 date: 2020-10-01T00:00:00+00:00
 thumb: ../images/thumbs/react-scheduler.png
-featuredImg: ../images/featured/react-scheduler.png
 githubLink: https://github.com/johncabang/scheduler
 ---
 

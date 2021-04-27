@@ -4,7 +4,6 @@ stack: ReactJS & Styled-Components
 slug: react-easybank
 date: 2021-03-26T00:00:00+00:00
 thumb: ../images/thumbs/react-easybank.png
-featuredImg: ../images/featured/react-easybank.png
 githubLink: https://github.com/johncabang/react-easybank
 previewLink: https://react-easybank.vercel.app/
 ---

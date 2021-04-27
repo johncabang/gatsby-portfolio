@@ -4,7 +4,6 @@ stack: ReactJS, Styled-Components, MomentJS, API's - WorldTime, IPstack, Program
 slug: react-clock
 date: 2021-04-01T00:00:00+00:00
 thumb: ../images/thumbs/react-clock.png
-featuredImg: ../images/featured/react-clock.png
 githubLink: https://github.com/johncabang/react-clock
 previewLink: https://react-clock-nine.vercel.app/
 ---
