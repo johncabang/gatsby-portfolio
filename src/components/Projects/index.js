@@ -25,6 +25,7 @@ const Projects = () => {
             stack
             title
             githubLink
+            previewLink
             thumb {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED)
