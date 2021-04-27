@@ -78,14 +78,13 @@ export const Image = styled(Img)`
 
   @media screen and (max-width: 968px) {
     margin: 0 2rem;
-    width: 300px;
+    width: 400px;
   }
 `
 export const ProjectBodyWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-
   width: 100%;
   margin: 0 2rem;
   padding: 0 1.5rem;

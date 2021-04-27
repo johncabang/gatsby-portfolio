@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { Link as LinkS } from "react-scroll"
 
 import { motion } from "framer-motion"
 
@@ -66,7 +66,7 @@ export const NavItem = styled(motion.li)`
   }
 `
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(LinkS)`
   color: #bc027f;
   display: flex;
   align-items: center;

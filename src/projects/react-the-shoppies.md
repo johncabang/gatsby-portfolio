@@ -6,7 +6,7 @@ date: 2021-03-05T00:00:00+00:00
 thumb: ../images/thumbs/react-the-shoppies.png
 featuredImg: ../images/featured/react-the-shoppies.png
 githubLink: https://github.com/johncabang/the-shoppies
-previewLink: https://the-shoppies-app-project.herokuapp.com/
+previewLink: https://the-shoppies-eta.vercel.app/
 ---
 
 **Something fishy about this one, we prefer our lorem ipsum grilled**, Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea robin Antarctic cod. Yellow-and-black triplefin gulper South American Lungfish mahi-mahi, butterflyfish glass catfish soapfish ling gray mullet! Warbonnet denticle herring spiny-back cod straptail tailor zebra loach sea lamprey.

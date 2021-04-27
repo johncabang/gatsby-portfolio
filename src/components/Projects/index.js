@@ -49,7 +49,7 @@ const Projects = () => {
   // console.log(projects)
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <ProjectsWrapper>
         <ProjectsTitle>FEATURED PROJECTS.</ProjectsTitle>
         <ProjectContainer>
@@ -76,12 +76,16 @@ const Projects = () => {
                 >
                   Github Link
                 </ProjectGithubLink>
-                <ProjectGithubLink
-                  href={project.frontmatter.previewLink}
-                  target="_blank"
-                >
-                  Live Preview
-                </ProjectGithubLink>
+                {project.frontmatter.previewLink ? (
+                  <ProjectGithubLink
+                    href={project.frontmatter.previewLink}
+                    target="_blank"
+                  >
+                    Live Preview
+                  </ProjectGithubLink>
+                ) : (
+                  ""
+                )}
               </ProjectBodyWrapper>
             </ProjectWrapper>
           ))}
