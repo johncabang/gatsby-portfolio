@@ -7,4 +7,4 @@
 
 <h3 align="center">Personal Portfolio (work in progress) </h3>
 <br />
-<img alt="front end developer portfolio screenshot" src="./docs/gatsby-portfolio-v1.png"/>
+<img align="center" src="./docs/gatsby-personal-portfolio.gif"  alt="front end developer portfolio screenshot" style="border-radius: 10px"  />
