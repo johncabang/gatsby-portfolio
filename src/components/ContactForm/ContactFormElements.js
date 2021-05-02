@@ -31,6 +31,10 @@ export const ContactInput = styled.input`
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   width: 400px;
+
+  @media screen and (max-width: 375px) {
+    width: 300px;
+  }
 `
 
 export const ContactButton = styled.button`
@@ -52,6 +56,10 @@ export const ContactButton = styled.button`
 export const ContactEmailImage = styled.div`
   display: flex;
   margin: 3rem;
+
+  @media screen and (max-width: 375px) {
+    margin: 3rem 0;
+  }
 `
 
 export const ContactTitle = styled.h2`

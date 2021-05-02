@@ -24,6 +24,10 @@ export const ProjectsWrapper = styled.div`
     text-align: center;
     padding: 0 1rem;
   }
+
+  @media screen and (max-webkit: 375px) {
+    padding: 0;
+  }
 `
 
 export const ProjectsTitle = styled.h2`
@@ -31,7 +35,7 @@ export const ProjectsTitle = styled.h2`
   font-weight: bold;
   color: #ccd6f6;
   width: 100%;
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin-bottom: 2rem;
 `
 

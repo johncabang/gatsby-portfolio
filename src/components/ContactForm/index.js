@@ -113,7 +113,7 @@ const ContactForm = () => {
             <StaticImage
               src="./../../images/email.svg"
               alt="email image"
-              layout="fixed"
+              layout="constrained"
               width={300}
             />
           </ContactEmailImage>

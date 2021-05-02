@@ -12,7 +12,6 @@ export const HeroContainer = styled.div`
 
   @media screen and (max-width: 960px) {
     transition: all 0.3s ease-in-out;
-
     justify-content: center;
   }
 `
@@ -27,6 +26,10 @@ export const HeroWrapper = styled.div`
   @media screen and (max-width: 960px) {
     transition: all 0.8s ease-in-out;
     padding: 0 2rem;
+  }
+
+  @media screen and (max-webkit: 375px) {
+    padding: 0;
   }
 `
 
