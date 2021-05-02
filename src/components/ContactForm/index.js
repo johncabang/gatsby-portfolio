@@ -31,6 +31,7 @@ const ContactForm = () => {
         info: { error: false, msg: msg },
       })
       setInputs({
+        name: "",
         email: "",
         message: "",
       })
