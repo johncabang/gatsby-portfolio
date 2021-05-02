@@ -82,7 +82,11 @@ export const ContactFormContainer = styled.div`
 
 export const ContactEmailStatus = styled.p`
   display: flex;
-  justify-content: center;
   font-size: 14px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+    justify-content: center;
+  }
 `
