@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar"
 import HeroSection from "../components/HeroSection"
 import Projects from "../components/Projects"
 import Footer from "../components/Footer"
+import ContactForm from "../components/ContactForm"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Navbar />
     <HeroSection />
     <Projects />
+    <ContactForm />
     <Footer />
   </Layout>
 )

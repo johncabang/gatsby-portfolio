@@ -49,6 +49,16 @@ const Navbar = () => {
               >
                 Projects
               </NavLinks>
+              <NavLinks
+                to="contact"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={100}
+                duration={500}
+              >
+                Contact
+              </NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

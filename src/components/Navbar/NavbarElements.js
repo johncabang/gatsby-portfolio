@@ -57,6 +57,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled(motion.li)`
+  display: flex;
   height: 80px;
 
   @media screen and (max-width: 960px) {

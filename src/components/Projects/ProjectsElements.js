@@ -32,6 +32,7 @@ export const ProjectsTitle = styled.h2`
   color: #ccd6f6;
   width: 100%;
   padding: 2rem 0;
+  margin-bottom: 2rem;
 `
 
 export const ProjectContainer = styled.div`

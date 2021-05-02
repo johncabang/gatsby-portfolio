@@ -20,7 +20,6 @@ export const HeroContainer = styled.div`
 export const HeroWrapper = styled.div`
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
   padding: 0 9rem;
@@ -62,7 +61,6 @@ export const HeroName = styled(motion.div)`
 
 export const HeroTitle = styled.div`
   display: flex;
-  flex-wrap: wrap;
   color: #fff;
   font-size: 75px;
   font-weight: bold;
@@ -70,7 +68,6 @@ export const HeroTitle = styled.div`
 
   @media screen and (max-width: 960px) {
     transition: all 0.3s ease-in-out;
-
     font-size: 50px;
     width: auto;
     padding-bottom: 1rem;

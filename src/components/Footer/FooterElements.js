@@ -4,6 +4,7 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+  background-color: #070014;
 `
 
 export const FooterWrapper = styled.div`
