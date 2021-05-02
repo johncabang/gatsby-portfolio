@@ -4,9 +4,13 @@ export const ContactContainer = styled.div`
   display: flex;
   justify-content: center;
   color: #fff;
-  height: calc(100vh - 80px);
+  height: 100vh;
   width: 100%;
   background-color: #070014;
+
+  @media screen and (max-width: 375px) {
+    height: 100%;
+  }
 `
 export const ContactWrapper = styled.div`
   display: flex;
@@ -74,6 +78,10 @@ export const ContactTitle = styled.h2`
     transition: 0.8s all ease;
     justify-content: center;
   }
+
+  @media screen and (max-width: 375px) {
+    font-size: 30px;
+  }
 `
 export const ContactFormContainer = styled.div`
   display: flex;
@@ -91,10 +99,15 @@ export const ContactFormContainer = styled.div`
 export const ContactEmailStatus = styled.p`
   display: flex;
   font-size: 14px;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 375px) {
+    transition: 0.8s all ease;
+    margin: 2rem 0;
   }
 `

@@ -14,6 +14,10 @@ export const HeroContainer = styled.div`
     transition: all 0.3s ease-in-out;
     justify-content: center;
   }
+
+  @media screen and (max-width: 375px) {
+    height: 100%;
+  }
 `
 
 export const HeroWrapper = styled.div`
@@ -27,10 +31,6 @@ export const HeroWrapper = styled.div`
     transition: all 0.8s ease-in-out;
     padding: 0 2rem;
   }
-
-  @media screen and (max-webkit: 375px) {
-    padding: 0;
-  }
 `
 
 export const HeroTextWrapper = styled.div`
@@ -38,6 +38,10 @@ export const HeroTextWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+
+  @media screen and (max-width: 375px) {
+    justify-content: flex-start;
+  }
 `
 
 export const HeroName = styled(motion.div)`
@@ -47,10 +51,13 @@ export const HeroName = styled(motion.div)`
 
   @media screen and (max-width: 960px) {
     transition: all 0.8s ease-in-out;
-
     font-size: 40px;
     width: auto;
     padding-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 30px;
   }
 
   &:hover {
@@ -74,6 +81,10 @@ export const HeroTitle = styled.div`
     font-size: 50px;
     width: auto;
     padding-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 40px;
   }
 `
 

@@ -3,20 +3,20 @@ import styled from "styled-components"
 export const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
+  padding: 2rem 0;
   background-color: #070014;
+  height: 100%;
 `
 
 export const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
-  height: 100%;
   width: 100%;
   max-width: 1000px;
-  padding: 0 0 2rem 0;
   font-size: 12px;
+  background-color: #070014;
 `
 
 export const FooterText = styled.p`
-  color: #fff; ;
+  color: #fff;
 `

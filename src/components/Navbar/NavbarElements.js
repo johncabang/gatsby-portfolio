@@ -65,6 +65,10 @@ export const NavItem = styled(motion.li)`
     height: auto;
     padding: 2rem;
   }
+
+  @media screen and (max-width: 375px) {
+    padding: 2rem 0;
+  }
 `
 
 export const NavLinks = styled(LinkS)`

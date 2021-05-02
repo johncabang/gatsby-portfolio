@@ -10,6 +10,10 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   color: white;
   width: 100%;
+
+  @media screen and (max-width: 375px) {
+    height: 100%;
+  }
 `
 
 export const ProjectsWrapper = styled.div`
@@ -24,10 +28,6 @@ export const ProjectsWrapper = styled.div`
     text-align: center;
     padding: 0 1rem;
   }
-
-  @media screen and (max-webkit: 375px) {
-    padding: 0;
-  }
 `
 
 export const ProjectsTitle = styled.h2`
@@ -37,6 +37,10 @@ export const ProjectsTitle = styled.h2`
   width: 100%;
   padding: 3rem 0;
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 375px) {
+    font-size: 30px;
+  }
 `
 
 export const ProjectContainer = styled.div`
@@ -83,7 +87,11 @@ export const Image = styled(GatsbyImage)`
 
   @media screen and (max-width: 968px) {
     margin: 0 2rem;
-    width: 400px;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin: 0 2rem;
+    width: 300px;
   }
 `
 export const ProjectBodyWrapper = styled.div`
