@@ -114,7 +114,7 @@ export const ProjectTitle = styled.h3`
   font-size: 22px;
 `
 
-export const ProjectDescription = styled.p`
+export const ProjectDescription = styled.div`
   color: #a8b2d1;
   font-size: 12px;
   padding-bottom: 0.5rem;
