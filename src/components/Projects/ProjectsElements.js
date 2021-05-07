@@ -10,10 +10,11 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   color: white;
   width: 100%;
+  height: 100%;
 
-  @media screen and (max-width: 375px) {
-    height: 100%;
-  }
+  padding-top: 5rem;
+  /* @media screen and (max-width: 375px) {
+  } */
 `
 
 export const ProjectsWrapper = styled.div`
@@ -72,7 +73,6 @@ export const ProjectImageWrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   width: 100%;
-  cursor: none;
 
   @media screen and (max-width: 960px) {
     height: 100%;
@@ -114,8 +114,18 @@ export const ProjectTitle = styled.h3`
   font-size: 22px;
 `
 
-export const ProjectStackTitle = styled.p`
+export const ProjectDescription = styled.p`
   color: #a8b2d1;
+  font-size: 12px;
+  padding-bottom: 0.5rem;
+
+  @media screen and (max-width: 968px) {
+    padding: 0 1.5rem 0.5rem 1.5rem;
+  }
+`
+
+export const ProjectStack = styled.p`
+  color: #5f667b;
   font-size: 12px;
 
   @media screen and (max-width: 968px) {
@@ -123,7 +133,9 @@ export const ProjectStackTitle = styled.p`
   }
 `
 
-export const ProjectGithubLink = styled.a`
+// TODOS: FIX LINK TAG - BLOCK
+
+export const ProjectLink = styled.a`
   font-size: 12px;
   color: #5f667b;
   padding-top: 0.5rem;

@@ -7,11 +7,12 @@ import {
   ProjectsTitle,
   ProjectContainer,
   ProjectTitle,
-  ProjectStackTitle,
+  ProjectStack,
   ProjectWrapper,
   ProjectImageWrapper,
   ProjectBodyWrapper,
-  ProjectGithubLink,
+  ProjectLink,
+  ProjectDescription,
 } from "./ProjectsElements"
 
 const Projects = () => {
@@ -33,6 +34,7 @@ const Projects = () => {
             }
           }
           id
+          html
         }
       }
     }
@@ -67,22 +69,27 @@ const Projects = () => {
               </ProjectImageWrapper>
               <ProjectBodyWrapper>
                 <ProjectTitle>{project.frontmatter.title}</ProjectTitle>
-                <ProjectStackTitle>
+                {/* TODOS: UPDATE MARKDOWN PROJECT DESCRIPTIONS */}
+                <ProjectDescription
+                  dangerouslySetInnerHTML={{ __html: project.html }}
+                />
+                <ProjectStack>
                   Built with: {project.frontmatter.stack}
-                </ProjectStackTitle>
-                <ProjectGithubLink
+                </ProjectStack>
+                {/* TODOS: FIX LINK TAG - BLOCK */}
+                <ProjectLink
                   href={project.frontmatter.githubLink}
                   target="_blank"
                 >
                   Github Link
-                </ProjectGithubLink>
+                </ProjectLink>
                 {project.frontmatter.previewLink ? (
-                  <ProjectGithubLink
+                  <ProjectLink
                     href={project.frontmatter.previewLink}
                     target="_blank"
                   >
                     Live Preview
-                  </ProjectGithubLink>
+                  </ProjectLink>
                 ) : (
                   ""
                 )}

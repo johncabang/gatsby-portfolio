@@ -9,15 +9,16 @@ export const HeroContainer = styled.div`
   justify-content: center;
   height: calc(100vh - 80px);
   width: 100%;
+  /* padding-top: 12rem; */
 
   @media screen and (max-width: 960px) {
     transition: all 0.3s ease-in-out;
     justify-content: center;
   }
 
-  @media screen and (max-width: 375px) {
+  /* @media screen and (max-width: 375px) {
     height: 100%;
-  }
+  } */
 `
 
 export const HeroWrapper = styled.div`
@@ -31,6 +32,11 @@ export const HeroWrapper = styled.div`
     transition: all 0.8s ease-in-out;
     padding: 0 2rem;
   }
+
+  /* @media screen and (max-width: 375px) {
+    transition: all 0.8s ease-in-out;
+    padding: 0;
+  } */
 `
 
 export const HeroTextWrapper = styled.div`

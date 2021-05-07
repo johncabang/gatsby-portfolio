@@ -30,6 +30,7 @@ export const ContactInput = styled.input`
   background-color: transparent;
   color: #fff;
   border: none;
+  box-shadow: none;
   border-bottom: 2px #8892b0 solid;
   outline: none;
   padding-bottom: 0.5rem;
@@ -37,7 +38,7 @@ export const ContactInput = styled.input`
   width: 400px;
 
   @media screen and (max-width: 375px) {
-    width: 300px;
+    width: 275px;
   }
 `
 
@@ -83,6 +84,7 @@ export const ContactTitle = styled.h2`
     font-size: 30px;
   }
 `
+
 export const ContactFormContainer = styled.div`
   display: flex;
   flex-direction: row;

@@ -13,10 +13,10 @@ export const FooterWrapper = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 1000px;
-  font-size: 12px;
-  background-color: #070014;
+  /* background-color: #070014; */
 `
 
 export const FooterText = styled.p`
+  font-size: 10px;
   color: #fff;
 `
