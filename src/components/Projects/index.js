@@ -56,7 +56,7 @@ const Projects = () => {
               {/* {console.log(project.frontmatter)} */}
               <ProjectImageWrapper
                 whileHover={{
-                  scale: 1.1,
+                  scale: 1.2,
                   transition: { duration: 0.2 },
                 }}
               >
