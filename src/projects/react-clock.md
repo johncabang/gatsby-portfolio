@@ -1,6 +1,6 @@
 ---
 title: CLOCK
-stack: React, Styled-Components, MomentJS, API's - WorldTime, IPstack, Programming Quotes
+stack: React, Styled-Components, MomentJS
 slug: react-clock
 date: 2021-04-01T00:00:00+00:00
 thumb: ../images/thumbs/react-clock.png
