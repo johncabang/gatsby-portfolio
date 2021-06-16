@@ -1,6 +1,6 @@
 ---
 title: PLANETS
-stack: React (Context API), Styled-Components
+stack: React (Context API), Styled-Components, Framer-Motion
 slug: react-planets
 date: 2021-04-01T00:00:00+00:00
 thumb: ../images/thumbs/react-planets.png
