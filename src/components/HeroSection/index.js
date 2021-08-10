@@ -32,15 +32,15 @@ const HeroSection = () => {
           >
             John Cabang
           </HeroName>
-          <HeroTitle>Front End Developer.</HeroTitle>
+          <HeroTitle>Web Developer.</HeroTitle>
           <HeroParagraphWrapper>
             <HeroParagraph>
-              I am a creative, responsible and motivated Front End Developer
-              seeking a full-time position. Having completed complex Lighthouse
-              Labs coding projects on time in just 12 weeks is testament to my
-              drive and levelheadedness under pressure. My ability to work well
-              with others and desirable leadership qualities are evidenced by
-              the 10 years I have spent as a team coach in a former role.
+              I am a creative, responsible and motivated Web Developer seeking a
+              full-time position. Having completed complex Lighthouse Labs
+              coding projects on time in just 12 weeks is testament to my drive
+              and levelheadedness under pressure. My ability to work well with
+              others and desirable leadership qualities are evidenced by the 10
+              years I have spent as a team coach in a former role.
             </HeroParagraph>
           </HeroParagraphWrapper>
           <HeroButtonContainer>
